@@ -285,6 +285,33 @@
 			<key>SyncRuntimePermissions</key>
 			<true/>
 		</dict>
+		<key>Patch</key>
+		<array>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>Comment</key>
+				<string>macOS to hacOS</string>
+				<key>Count</key>
+				<integer>1</integer>
+				<key>Enabled</key>
+				<false/>
+				<key>Find</key>
+				<data>bWFjT1M=</data>
+				<key>Identifier</key>
+				<string>Apple</string>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Mask</key>
+				<data></data>
+				<key>Replace</key>
+				<data>aGFjT1M=</data>
+				<key>ReplaceMask</key>
+				<data></data>
+				<key>Skip</key>
+				<integer>0</integer>
+			</dict>
+		</array>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
@@ -298,12 +325,10 @@
 				<string>Internal@0,2,0</string>
 				<key>device_type</key>
 				<string>Display controller</string>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-2</string>
 				<key>model</key>
 				<string>Intel UHD Graphics 630 (Desktop)</string>
+				<key>device-id</key>
+				<data>xZsAAA==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -347,6 +372,8 @@
 				<string>onboard-2</string>
 				<key>model</key>
 				<string>Radeon RX 5600</string>
+				<key>shikigva</key>
+				<integer>80</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1,0x0)/Pci(0x0,0x0)/Pci(0x0,0x0)/Pci(0x0,0x1)</key>
 			<dict>
@@ -948,8 +975,7 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleAttributes</key>
@@ -964,6 +990,8 @@
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1045,8 +1073,7 @@
 			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
-		<array>
-		</array>
+		<array/>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -1140,7 +1167,7 @@
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>MLB</key>
-			<string>C02945301GUJG36CB</string>
+			<string>C02150609QX0000JA</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1148,11 +1175,11 @@
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>iMac20,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZN0SNHX87</string>
+			<string>C02GT0NG046M</string>
 			<key>SystemUUID</key>
-			<string>289B0D50-A1C3-4D01-A53B-E4F4904B9BE7</string>
+			<string>00C76791-B914-4347-9010-EC1E79FB84EC</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1193,8 +1220,10 @@
 			<key>MinimumVolume</key>
 			<integer>20</integer>
 			<key>PlayChime</key>
-			<false/>
+			<string>Auto</string>
 			<key>VolumeAmplifier</key>
+			<integer>0</integer>
+			<key>SetupDelay</key>
 			<integer>0</integer>
 		</dict>
 		<key>ConnectDrivers</key>
@@ -1294,8 +1323,6 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>DeduplicateBootOrder</key>
-			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
